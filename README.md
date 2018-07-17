@@ -1,6 +1,7 @@
 # php-gpg-keyinfo
 
-See: https://github.com/gpg/gnupg/blob/gnupg-2.2.9/doc/DETAILS
+* https://github.com/gpg/gnupg/blob/gnupg-2.2.9/doc/DETAILS
+* https://gist.github.com/ryanwinchester/3a6d103be500e31dc366
 
 ## Usage
 
