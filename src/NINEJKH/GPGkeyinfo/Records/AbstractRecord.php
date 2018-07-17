@@ -27,7 +27,14 @@ class AbstractRecord implements RecordInterface
 
     public function __get($name)
     {
-        return $this->fields[$name];
+        if ($this->__isset($name)) {
+            return $this->fields[$name];
+        }
+    }
+
+    public function __isset($name)
+    {
+        return array_key_exists($name, $this->fields);
     }
 
     public function parse(array $fields)
@@ -38,6 +45,10 @@ class AbstractRecord implements RecordInterface
             }
 
             if ($fields[$n] === '') {
+                continue;
+            }
+
+            if ($mapping['name'] === 'origin' && empty($fields[$n])) {
                 continue;
             }
 
