@@ -66,8 +66,8 @@ class AbstractRecord implements RecordInterface
                     if (empty($fields[$n])) {
                         $value = false;
                     }
-                    elseif (ctype_digit($fields[$n]) && strlen($fields[$n]) === 10) {
-                        $value = new DateTime('@' . $fields[$n]);
+                    elseif (ctype_digit($fields[$n])) {
+                        $value = new DateTime(sprintf('@%d', $fields[$n]));
                     }
                     else {
                         $value = new DateTime($fields[$n]);
