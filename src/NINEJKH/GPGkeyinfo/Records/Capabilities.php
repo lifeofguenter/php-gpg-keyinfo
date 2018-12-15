@@ -50,4 +50,3 @@ trait Capabilities
         return false;
     }
 }
-
