@@ -1,17 +1,17 @@
 <?php
 
 /**
- * This file is part of the NINEJKH/php-gpg-keyinfo library.
+ * This file is part of the lifeofguenter/php-gpg-keyinfo library.
  *
- * (c) 9JKH (Pty) Ltd. <dev@9jkh.co.za>
+ * (c) Günter Grodotzki <gunter@grodotzki.com>
  *
  * For the full copyright and license information, please view the LICENSE file
  * that was distributed with this source code.
  */
 
-namespace NINEJKH\GPGkeyinfo\Records;
+namespace Lifeofguenter\GPGkeyinfo\Records;
 
-use NINEJKH\GPGkeyinfo\Record;
+use Lifeofguenter\GPGkeyinfo\Record;
 use DateTime;
 
 class AbstractRecord implements RecordInterface
@@ -75,7 +75,7 @@ class AbstractRecord implements RecordInterface
                     break;
 
                 case 'to_utf8':
-                    $value = \NINEJKH\GPGkeyinfo\Decode::toUtf8($fields[$n]);
+                    $value = \Lifeofguenter\GPGkeyinfo\Decode::toUtf8($fields[$n]);
                     break;
 
                 case 'split':

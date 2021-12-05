@@ -1,15 +1,15 @@
 <?php
 
 /**
- * This file is part of the NINEJKH/php-gpg-keyinfo library.
+ * This file is part of the lifeofguenter/php-gpg-keyinfo library.
  *
- * (c) 9JKH (Pty) Ltd. <dev@9jkh.co.za>
+ * (c) Günter Grodotzki <gunter@grodotzki.com>
  *
  * For the full copyright and license information, please view the LICENSE file
  * that was distributed with this source code.
  */
 
-namespace NINEJKH\GPGkeyinfo;
+namespace Lifeofguenter\GPGkeyinfo;
 
 use Iterator;
 
@@ -65,7 +65,7 @@ class Parser implements Iterator
                 $this->records[++$pos] = [];
             }
 
-            $class_name = 'NINEJKH\\GPGkeyinfo\\Records\\' . ucfirst($columns[0]);
+            $class_name = 'Lifeofguenter\\GPGkeyinfo\\Records\\' . ucfirst($columns[0]);
 
             if (class_exists($class_name, true)) {
                 $this->records[$pos][] = new $class_name($columns);

@@ -1,23 +1,24 @@
 {
-    "name": "ninejkh/php-gpg-keyinfo",
-    "description": "A gpg --with-colons parser.",
-    "keywords": ["gpg", "parser"],
-    "homepage": "https://github.com/NINEJKH/php-gpg-keyinfo",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "9JKH (Pty) Ltd.",
-            "email": "dev@9jkh.co.za",
-            "homepage": "https://9jkh.co.za"
-        }
-    ],
-    "require": {
-        "php": ">=7.0.0"
-    },
-    "require-dev": {
-        "php-coveralls/php-coveralls": "^2.1"
-    },
-    "autoload": {
-        "psr-4": {"NINEJKH\\": "src/"}
+  "name": "lifeofguenter/php-gpg-keyinfo",
+  "description": "A gpg --with-colons parser.",
+  "keywords": ["gpg", "parser"],
+  "homepage": "https://github.com/lifeofguenter/php-gpg-keyinfo",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Günter Grodotzki",
+      "email": "gunter@grodotzki.com",
+      "homepage": "https://lifeofguenter.de"
     }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "ext-mbstring": "*"
+  },
+  "require-dev": {
+    "php-coveralls/php-coveralls": "^2.1"
+  },
+  "autoload": {
+    "psr-4": {"Lifeofguenter\\GPGkeyinfo\\": "src"}
+  }
 }

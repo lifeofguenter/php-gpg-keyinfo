@@ -1,15 +1,15 @@
 <?php
 
 /**
- * This file is part of the NINEJKH/php-gpg-keyinfo library.
+ * This file is part of the lifeofguenter/php-gpg-keyinfo library.
  *
- * (c) 9JKH (Pty) Ltd. <dev@9jkh.co.za>
+ * (c) Günter Grodotzki <gunter@grodotzki.com>
  *
  * For the full copyright and license information, please view the LICENSE file
  * that was distributed with this source code.
  */
 
-namespace NINEJKH\GPGkeyinfo\Records;
+namespace Lifeofguenter\GPGkeyinfo\Records;
 
 class Sub extends AbstractRecord
 {
